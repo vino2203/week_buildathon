@@ -1,0 +1,10 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Distribution of Green Manure Seeds (MMKMKS)	Distribution of Green Manure Seeds	Distribution of Green Manure Seeds @50% Subsidy (Rs.1000/acre/farmer)
+Distribution of Vermibeds	Distribution of Vermibeds	Distribution of Vermibeds @ 2 vermibeds / farmer @50% subsidy
+Establishment of Organic Input Production Centre (MMKMKS)	Establishment of Organic Input Production Centre	Financial Assistance of Rs.1,00,000 per Farmer group
+Enhancement of production in Rainfed area (MMKMKS)	Enhancement of production in Rainfed area	Rs.1200 per acre will be provided i.e., Summer Ploughing-Rs.500 (50% Subsidy) and Seeds Distribution-Rs.700 (50% Subsidy)
+Distribution of Neem tree saplings to farmers	Distribution of Neem tree saplings to farmers	Neem Tree saplings will be provided at free of cost
+Creation of Organic Farming Model Plots at Block Level (Bio fertiliser and other)	Organic Manure, Bio Fertilizer and Bio control Agents	null
+Creation of Organic Farming Model Plots at Block Level (Financial Assistance)	Financial Assistance	Financial Assistance Rs.10,000/farmer will be given

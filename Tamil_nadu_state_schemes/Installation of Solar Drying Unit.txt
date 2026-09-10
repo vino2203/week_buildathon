@@ -1,0 +1,34 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Shade net	Shadenet	
+Bio village	Bio village	null
+Area Expansion Programme(AEP)	Brinjal	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Green chillies	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Water melon	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Tomato	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Tapioca	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Small Onion	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Bellary Onion	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Bitter Gourd	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Snake Gourd	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Radish	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Moringa	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Ridge gourd	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	cluster Beans	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Pumpkin	40% subsidy limitted to maximum of Rs. 20,000/ha
+Area Expansion Programme(AEP)	Mango	60% subsidy limitted to maximum of Rs. 7650/ha
+Area Expansion Programme(AEP)	Guava	60% subsidy limitted to maximum of Rs. 17,599/ha
+Area Expansion Programme(AEP)	T.C.Banana	60% subsidy limitted to maximum of Rs. 37,500/ha
+Area Expansion Programme(AEP)	T.C.Banana inter crop	60% subsidy limitted to maximum of Rs. 26,250/ha
+Area Expansion Programme(AEP)	Banna Suckers	60% subsidy limitted to maximum of Rs. 26,250/ha
+Area Expansion Programme(AEP)	Dry Chilles	40% subsidy limitted to maximum of Rs. 12,000/ha
+Area Expansion Programme(AEP)	Dry Coriander	40% subsidy limitted to maximum of Rs. 12,000/ha
+Area Expansion Programme(AEP)	Turmeric	40% subsidy limitted to maximum of Rs. 12,000/ha
+Area Expansion Programme(AEP)	Nutmeg inter crop	40% subsidy limitted to maximum of Rs. 15,000/ha
+Area Expansion Programme(AEP)	Tuberose	40% subsidy limitted to maximum of Rs. 60,000/ha
+Area Expansion Programme(AEP)	Loose flowers	40% subsidy limitted to maximum of Rs. 16,000/ha
+Area Expansion Programme(AEP)	Cashew	40% subsidy limitted to maximum of Rs. 12,000/ha
+Area Expansion Programme(AEP)	Reduced Pesticide Village/IPM	40% subsidy limitted to maximum of Rs. 1200/ha
+Area Expansion Programme(AEP)	Shadenet	50% subsidy limitted to maximum of Rs. 355/sqm
+Area Expansion Programme(AEP)	Mulching	50% subsidy limitted to maximum of Rs. 16,000/ha

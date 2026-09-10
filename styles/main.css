@@ -1,0 +1,121 @@
+/* Premium Modern Chatbot UI for Streamlit */
+
+:root {
+    /* Centralized Variables */
+    --bg-primary: #F9FAFB;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    --accent-color: #2563EB;
+    --border-color: #E5E7EB;
+    --border-radius-lg: 12px;
+    --border-radius-md: 8px;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #111827;
+        --bg-secondary: #1F2937;
+        --text-primary: #F9FAFB;
+        --text-secondary: #9CA3AF;
+        --accent-color: #3B82F6;
+        --border-color: #374151;
+    }
+}
+
+/* Base Body Styles */
+.stApp {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hide Default Streamlit Elements for a cleaner look */
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+.stDeployButton {display: none;}
+
+/* Adjust top padding */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 8rem !important;
+    max-width: 800px;
+}
+
+/* Chat Messages */
+.stChatMessage {
+    background-color: transparent !important;
+    border-radius: var(--border-radius-lg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.stChatMessage:hover {
+    background-color: var(--bg-secondary) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+/* User Message specific overrides */
+[data-testid="stChatMessage"]:nth-child(even) {
+    background-color: rgba(0,0,0,0.02) !important;
+}
+@media (prefers-color-scheme: dark) {
+    [data-testid="stChatMessage"]:nth-child(even) {
+        background-color: rgba(255,255,255,0.02) !important;
+    }
+}
+
+/* Chat Input Composer */
+[data-testid="stChatInput"] {
+    border-radius: var(--border-radius-lg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-md) !important;
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: var(--border-radius-md) !important;
+    border: 1px solid var(--border-color) !important;
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+/* Sidebar Customization */
+[data-testid="stSidebar"] {
+    background-color: var(--bg-secondary) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+/* Welcome Screen Cards (Using Expander or Columns) */
+div[data-testid="stExpander"] {
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--border-radius-lg) !important;
+    background-color: var(--bg-secondary) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+/* File Uploader styling */
+[data-testid="stFileUploader"] {
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-secondary);
+}
+
+/* Avatar styling */
+[data-testid="stChatMessageAvatarUser"] {
+    background-color: var(--text-secondary) !important;
+}
+[data-testid="stChatMessageAvatarAssistant"] {
+    background-color: var(--accent-color) !important;
+}

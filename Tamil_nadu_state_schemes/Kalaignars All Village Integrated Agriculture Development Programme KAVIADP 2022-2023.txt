@@ -1,0 +1,5 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Financial assistance to individuals for new agri entrepreneurship -2023-24	Financial assistance to individuals for new agri entrepreneurship	40% of project cost not exceeding maximum of Rs.2.00 lakhs
+Matching grant to existing Agri Entrepreneurs -2023-24	Matching grant to existing Agri Entrepreneurs	50% of project cost with a ceiling of Rs.5.00 lakhs

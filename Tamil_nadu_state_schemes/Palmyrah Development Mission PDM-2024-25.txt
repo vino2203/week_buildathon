@@ -1,0 +1,53 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Promotion of Intercropping	Intercropping of Banana with coconut	40% subsidy limited to a maximum of Rs.26,250/Ha
+Promotion of Intercropping	Intercropping of Vegetables with Banana	40% subsidy limited to a maximum of Rs.10,000/Ha
+Area Expansion Programme (SHDS)	Lime	40% subsidy limited to a maximum of Rs. 13,195 /Ha
+Area Expansion Programme (SHDS)	Mango	40% subsidy limited to a maximum of Rs. 6,120/Ha
+Area Expansion Programme (SHDS)	Guava	40% subsidy limited to a maximum of Rs.9,201/Ha
+Area Expansion Programme (SHDS)	Normal Planting in fruits- Papaya	40% subsidy limited to a maximum of Rs.18,497/Ha
+Area Expansion Programme (SHDS)	Normal Planting in fruits - Pomegranate	40% subsidy limited to a maximum of Rs.11,520/Ha
+Area Expansion Programme (SHDS)	Normal Planting in fruits - Sapota	40% subsidy limited to a maximum of Rs.10,896/Ha
+Area Expansion Programme (SHDS)	High Density Planting in fruits - Mango	40% subsidy limited to a maximum of Rs.9,840 /Ha
+Area Expansion Programme (SHDS)	High Density Planting in fruits- Guava	40% subsidy limited to a maximum of Rs.17,599 /Ha
+Area Expansion Programme (SHDS)	Vegetable Area Expansion	40% subsidy limited to a maximum of Rs.20,000 /Ha
+Area Expansion Programme (SHDS)	Vegetable through seeds	40% subsidy limited to a maximum of Rs.10,000 /Ha
+Area Expansion Programme (SHDS)	Spices - Seed and Rhizomatic spice	40% subsidy limited to a maximum of Rs.12,000/Ha
+Area Expansion Programme (SHDS)	Spices - Perennial Spices	40% subsidy limited to a maximum of Rs.20,000/Ha
+Area Expansion Programme (SHDS)	Loose flowers	40% subsidy limited to a maximum of Rs.16,000 /Ha
+Area Expansion Programme (SHDS)	Flowers - Bulbous flowers	40% subsidy limited to a maximum of Rs.60,000 /Ha
+Hi-Tech horticulture practices	Shadenet house	50% subsidy limited to a maximum of Rs.355 /Sq m
+Hi-Tech horticulture practices	Poly green house upto 500 Sq m	50% subsidy limited to a maximum of Rs.530/Sq m
+Hi-Tech horticulture practices	Poly green house 501 - 1008 Sq m	50% subsidy limited to a maximum of Rs.467.50 /Sq m
+Hi-Tech horticulture practices	Poly green house 1009 - 2080 Sq m	50% subsidy limited to a maximum of Rs.445 /Sq m
+Hi-Tech horticulture practices	Poly green house 2081 - 4000 Sq m	50% subsidy limited to a maximum of Rs.422 /Sq m
+Hi-Tech horticulture practices	Hydrophonics	50% subsidy limited to a maximum of Rs.25,000 /unit
+Hi-Tech horticulture practices	Vertical Garden	50% subsidy limited to a maximum of Rs.15,000 /Unit
+Need based intervention in Horticulture Crops	Intercropping of Vegetables with Banana/Tapioca	Subsidy- Rs.10,000/Ha
+Need based intervention in Horticulture Crops	Intercropping of Vegetables in perennial Horticulture Crops	Subsidy- Rs.10,000/Ha
+Need based intervention in Horticulture Crops	INM/IPM for betelvine	Assistance limited to a maximum of Rs.10,000/Ha
+Need based intervention in Horticulture Crops	Distribution of Plastic crates	40% subsidy - Rs.3,000 per unit
+Need based intervention in Horticulture Crops	Low cost Onion storage structure	50% subsidy limited to a maximum of Rs.3500/ MT
+Establishment of Cottage Mushroom unit	Establishment of Cottage Mushroom Unit	50% subsidy limited to a maximum of Rs.50,000/ Unit
+Establishing Garden in Govt. educational institutions and Orphanages	Establishing Garden in Govt. educational institutions and Orphanages	100% subsidy imited to a maximum of Rs.8,000/Unit
+Area Expansion Programme (SHDS)	Amla	40% subsidy limited to a maximum of Rs.9,601/Ha
+Area Expansion Programme (SHDS)	Medicinal plants area expansion-Medicial Coleus	75% subsidy limited to a maximum of Rs. 51,975 /Ha
+Area Expansion Programme (SHDS)	Medicinal plants area expansion -Gloriosa	75% subsidy limited to a maximum of Rs. 166,125/Ha
+Area Expansion Programme (SHDS)	Medicinal plants area expansion- Senna	75% subsidy limited to a maximum of Rs 30,225/Ha
+Area Expansion Programme (SHDS)	Medicinal plants area expansion- Periwinkle (Vinca)	75% subsidy limited to a maximum of Rs 30,225/Ha
+Area Expansion Programme (SHDS)	Coconut Area expansion	50% subsidy limited to a maximum of Rs.12,000 /Ha
+Area Expansion Programme (SHDS)	Traditional Vegetables Area Expansion	40% subsidy limited to a maximum of Rs.20,000 /Ha
+Area Expansion Programme (SHDS)	chillies Area Expansion	40% subsidy limited to a maximum of Rs.12,000 /Ha
+Area Expansion Programme (SHDS)	Flowers - Loose flowers	40% subsidy limited to a maximum of Rs.16,000 /Ha
+Promotion of Intercropping	Intercropping of vegetables with cashew	50% subsidy limited to a maximum of Rs.10,000
+Promotion of Intercropping	Intercropping of vegetables with perennial Horticulture crops	50% subsidy limited to a maximum of Rs.10,000
+Promotion of Intercropping	Intercropping of Nutmeg with Coconut plantation	50% subsidy limited to a maximum of Rs.10,000
+Promotion of Intercropping	Intercropping of Banana with Coconut plantation	50% subsidy limited to a maximum of Rs.17,500
+Need based intervention in Horticulture Crops	Productivity improvement in Coconut	30% subsidy limited to a maximum of Rs.12,000/
+Need based intervention in Horticulture Crops	Removal of prosopis for Chillies cultivation	50% subsidy limited to a maximum of Rs.5,000/
+Need based intervention in Horticulture Crops	Control of Mealybug infestation in Tapioca	30% subsidy limited to a maximum of Rs.1,200/
+Moringa Export Zone	Adoption of Organic farming -II year	Assistance limited to a maximum of Rs.3,000/Ha
+Moringa Export Zone	Certificate cost -II year	Assistance limited to a maximum of Rs.3,000/Ha
+Moringa Export Zone	Adoption of Organic farming -I year	Assistance limited to a maximum of Rs.3,000/Ha
+Moringa Export Zone	Certificate cost -I year	Assistance limited to a maximum of Rs.3,000/Ha

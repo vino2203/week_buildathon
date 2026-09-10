@@ -1,0 +1,16 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Aluminium ladders	Aluminium ladders	
+Area Expansion Programme(NMEO)	Area Expansion Programme	100% subsidy limited to a maximum of Rs.20,000/ Ha for indigenous seedlings, Rs.29,000/Ha for importing seedlings
+Oil palm Maintenance	oil palm Maintenance	50% subsidy limited to a maximum of Rs.5,250/ Ha
+Intercroppping on Oil Palm	Intercroppping on Oil Palm	50% subsidy limited to a maximum of Rs.5,250/ Ha
+Supply of Diesel/ Electric Pump Set (GEN)	Supply of Diesel/ Electric Pump Set (GEN)	50% subsidy limited to a maximum of Rs.22,500/No
+Supply of Diesel/ Electric Pump Set (SC/ST/Women)	Supply of Diesel/ Electric Pump Set	50% subsidy limited to a maximum of Rs.27,000/No
+Bore Well (NMEO)	Bore Well	50% subsidy limited to a maximum of Rs.50,000/No
+Oil Palm Cutter	Oil Palm Cutter	50% subsidy limited to a maximum of Rs.2,500/No
+Oil Palm Protective wire mesh	Oil Palm Protective wire mesh	50% subsidy limited to a maximum of Rs.20,000/No
+Motorised Chisel	Motorised Chisel	50% subsidy limited to a maximum of Rs.15,000/No
+Aluminium Portable Ladder	Aluminium Portable Ladder	50% subsidy limited to a maximum of Rs.5,000/No
+Chaff Cutter	Chaff Cutter	50% subsidy limited to a maximum of Rs.50,000/No
+Tractor Trolley	Tractor Trolley	50% subsidy limited to a maximum of Rs.2,00,000/No

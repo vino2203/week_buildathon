@@ -1,0 +1,4 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Crop Component, Milch cow-1 No/ Goats - 10 No's, Vermibed - 1 No, Apiary Unit - 1 No, Fruit seedlings	Crop Component, Milch cow-1 No/ Goats - 10 No's, Vermibed - 1 No, Apiary Unit - 1 No, Fruit seedlings	null

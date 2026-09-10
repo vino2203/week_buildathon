@@ -1,0 +1,40 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Promotion of specific Horticultural crops of demand	Onion	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Promotion of specific Horticultural crops of demand	Annual Moringa	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Promotion of specific Horticultural crops of demand	Perennial Moringa	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Promotion of specific Horticultural crops of demand	Sub Tropical Fruits	50% subsidy limited to a maximum of Rs.30,000/ Ha
+Promotion of specific Horticultural crops of demand	Dragon fruit	50% subsidy limited to a maximum of Rs.96,000/ Ha
+Supporting structures for Horticultural crops	Permanent Pandal system	50% subsidy limited to a maximum of Rs.2,00,000/ Ha
+Supporting structures for Horticultural crops	Trellis for tomato, french beans	50% subsidy limited to a maximum of Rs.25,000/ Ha
+Supporting structures for Horticultural crops	Weedmat	50% subsidy limited to a maximum of Rs.21/Sq m
+Area Expansion of Horticulture Crops (NADP)	Papaya	40% subsidy limited to a maximum of Rs.23,100/ Ha
+Area Expansion of Horticulture Crops (NADP)	Guava	40% subsidy limited to a maximum of Rs.9202/ Ha
+Area Expansion of Horticulture Crops (NADP)	WaterMelon	50% subsidy limited to a maximum of Rs.10,000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Amla	40% subsidy limited to a maximum of Rs.14,400/ Ha
+Area Expansion of Horticulture Crops (NADP)	Jack	40% subsidy limited to a maximum of Rs.14,400/ Ha
+Area Expansion of Horticulture Crops (NADP)	Other Vegetables	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Coriander	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Chillies	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Ginger	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Black Pepper	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Lemon grass	60% subsidy limited to a maximum of Rs.16000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Cashew	40% subsidy limited to a maximum of Rs.12000/
+Promotion of Specific Horticulture Crops	Annual Moringa	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Promotion of Specific Horticulture Crops	Perennial Moringa	40% subsidy limited to a maximum of Rs.10,000/ Ha
+Promotion of Specific Horticulture Crops	Sub Tropical Fruits Area Expansion - Avacado	50% subsidy limited to a maximum of Rs.30,000/ Ha
+Promotion of Specific Horticulture Crops	Onion	40% subsidy limited to a maximum of Rs.20,000/ Ha
+Promotion of Specific Horticulture Crops	Dragon fruit	Promotion of Specific Horticulture Crops-Onion
+Area Expansion of Horticulture Crops (NADP)	Tomato	40% subsidy limited to a maximum of Rs.20000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Brinjal	40% subsidy limited to a maximum of Rs.20000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Bhendi	40% subsidy limited to a maximum of Rs.20000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Bottlegourd (or) Bitter gourd (or) Snake gourd (or) Ridge gourd	40% subsidy limited to a maximum of Rs.20000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Curry leaf	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Bulbous flowers	60% subsidy limited to a maximum of Rs.60000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Acid lime	40% subsidy limited to a maximum of Rs.13,195/ Ha
+Area Expansion of Horticulture Crops (NADP)	Jasmine	40% subsidy limited to a maximum of Rs.16,000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Turmeric	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Coriander	40% subsidy limited to a maximum of Rs.12000/ Ha
+Area Expansion of Horticulture Crops (NADP)	Muskmelon	50% subsidy limited to a maximum of Rs.10,000/ Ha
+Mango Rejuvenation	Mango Rejuvenation	50

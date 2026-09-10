@@ -1,0 +1,5 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Distribution of bud chip seedling varieties - State	Distribution of bud chip seedling varieties (Co 0212, Co 11015, Co 86032, CoV 09356, Coc 13339 / CoG6, CoG 7) @ 12500 seedlings / Ha	50% Subsidy Rs.12500/Ha
+Distribution of single bud direct planting - State	Distribution of single bud direct planting with Co 0212, Co 11015, Co 86032, CoV 09356, Coc 13339 / CoG6, CoG 7) @ 2.5 MT / Ha	50% Subsidy Rs.3750/Ha

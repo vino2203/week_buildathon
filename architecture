@@ -1,0 +1,138 @@
+
+[Language Select]
+       |
+       +-----------------------------------+
+       |                                   |
+    (Tamil)                            (English)
+ [metadata == 0]                    [metadata == 1]
+       |                                   |
+       +----------------> [State / Central Preference] <----------------+
+                                   |
+         +-------------------------+-------------------------+
+         |                         |                         |
+         v                         v                         v
+[State Tamil Nadu Scheme]  [Both TN & Central]       [Central Scheme]
+         |                         |                         |
+         v                         v                         v
+[Should get only TN Scheme] [Should show both TN     [Should show only 
+                             & Central Scheme]        Central board Scheme]
+
+
+
+
+Architecture & RAG Pipeline Diagram (From Architecture Page 1)
+
+flowchart TD
+    subgraph Ingestion [Data Ingestion & Preprocessing]
+        A[Playwright Web Scraping / PDF & DOC Download] --> B[Multimodal / Vision Conversion to Text]
+        B --> C1[Tamil Nadu Scheme Docs]
+        B --> C2[Central Board Scheme Docs]
+    end
+
+    subgraph Processing [Chunking & Embeddings]
+        C1 --> D1[Recursive Text Splitter - TN]
+        C2 --> D2[Recursive Text Splitter - Central]
+        D1 --> E1[OpenAI Embeddings - TN]
+        D2 --> E2[OpenAI Embeddings - Central]
+        E1 --> F1[(FAISS Vector Store - TN)]
+        E2 --> F2[(FAISS Vector Store - Central)]
+    end
+
+    subgraph Retrieval_Generation [Retrieval & Reasoning]
+        F1 & F2 --> G[Retriever: Self-RAG + Re-Rank]
+        G --> H[System Prompt: ToT / RTCFR Framework]
+        H --> I[LLM: OpenAI Model]
+        I --> J[Output: Plain Text]
+        J --> K[Streamlit Chatbot UI]
+    end
+
+
+Document and Hierarchy Structure
+Based on your handwritten architecture notes and system design specifications, here is the structured layout for your documentation, folder hierarchy, and system components:
+
+1. Main Directory & Folder Hierarchy
+The file storage structure for raw downloads, converted text, and vector embeddings must be organized as follows:
+
+Plaintext
+Agriculture-documentation/ (Main Folder)
+│
+├── 1_State_board_Schemes/
+│   ├── raw_docs/             # Scraped PDFs, DOCs, and web pages for Tamil Nadu
+│   ├── text_converted/       # Multimodal/OCR text conversion output (.txt / .json)
+│   └── vector_store_faiss/   # FAISS local index for Tamil Nadu scheme embeddings
+│
+└── 2_Central_board_Schemes/
+    ├── raw_docs/             # Scraped PDFs, DOCs, and web pages for Central Govt
+    ├── text_converted/       # Multimodal/OCR text conversion output (.txt / .json)
+    └── vector_store_faiss/   # FAISS local index for Central scheme embeddings
+2. End-to-End Pipeline Hierarchy
+The data flow and processing hierarchy from ingestion to user output follows this structured sequence:
+
+Stage A: Data Ingestion & Conversion
+Web Scraping: Automated extraction using Playwright to download official scheme PDFs, documents, and web pages.
+
+Multimodal Parsing: Processing complex documents with vision-enabled language models to convert unstructured layouts into clean text.
+
+Storage Routing: Storing raw files and processed text into respective State (Tamil Nadu) and Central board folders.
+
+Stage B: Text Processing & Embedding
+Text Splitting: Utilizing LangChain's RecursiveCharacterTextSplitter to break down documents into manageable chunks.
+
+Embedding Generation: Converting text chunks into meaningful mathematical vectors using OpenAI embedding models (GPT-4 / text-embedding models).
+
+Vector Indexing: Storing embeddings in local serverless vector databases (FAISS) segregated into state and central directories.
+
+Stage C: Retrieval & Generation (RAG)
+Advanced Retrieval: Implementing Self-RAG combined with Re-Rank mechanisms via LangChain structures.
+
+Prompt Engineering: Applying ToT (Tree of Thoughts) or RTCFR frameworks within system prompts to extract and synthesize information across sources.
+
+Engine & Interface: Utilizing OpenAI models for text generation, deployed via a Streamlit chat interface supporting language and jurisdiction preference routing.
+
+
+1. System Prompt Design Framework
+Your system prompt should enforce accuracy, source attribution, and structured reasoning using the frameworks you selected.
+
+Prompt Architecture Frameworks:
+
+ToT (Tree of Thoughts) / RTCFR Framework: Guides the model to explore multiple reasoning paths (e.g., verifying eligibility rules step-by-step) before finalizing its output.
+
+Core System Prompt Directives:
+
+Role: Act as an expert agricultural schemes and subsidy advisor for Tamil Nadu and Central Government policies.
+
+Constraint 1 (Grounding): Answer exclusively using the retrieved context provided by the RAG vector store. If the information is not present, explicitly state that details are unavailable.
+
+Constraint 2 (Attribution): Always cite the specific government scheme name, document source, or G.O. reference.
+
+Constraint 3 (Language Matching): If the user selected Tamil, respond in fluent, natural Tamil using proper agricultural terminology. If English, respond in professional English.
+
+2. LLM Engine Configuration
+Primary Engine Model: OpenAI model (such as GPT-4o or GPT-4 Omni series) for both text generation and multimodal document processing.
+
+Embedding Model: OpenAI embedding endpoint optimized for generating mathematical vector representations of text chunks.
+
+Invocation Structure: Built using LangChain runnables or chains, connecting the retriever, prompt template, and LLM together.
+
+3. Streamlit User Interface (UI) Layer
+The frontend layout built with Streamlit handles the interactive decision tree before passing queries to the backend RAG pipeline:
+
+Step 1: Sidebar / Top Configuration Widgets
+
+Language Selector: Radio buttons or dropdown allowing the user to choose between English (English) and Tamil (தமிழ்).
+
+Jurisdiction Selector: Radio buttons mapping to your business logic:
+
+Tamil Nadu State Schemes
+
+Central Government Schemes
+
+Both (Tamil Nadu & Central)
+
+Step 2: Chat Interface (st.chat_input & st.chat_message)
+
+Maintains a stateful chat history so farmers or stakeholders can ask follow-up questions.
+
+Step 3: Dynamic Backend Filtering
+
+Based on the sidebar selections, Streamlit passes metadata filters (jurisdiction: TN/Central/Both) directly into the LangChain retriever before executing the search against your FAISS vector databases.

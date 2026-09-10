@@ -1,0 +1,102 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Plastic Mulching	Plastic Mulching	
+Creation of Water Source (Community)	Creation of Water Source (Community)	Creation of Water Source (Community)
+Creation of Water Source (Individual)	Creation of Water Source (Individual)	Creation of Water Source (Individual)
+Protected Cultivation	Shadenet	50% subsidy limited to a maximum of Rs.355 /Sq m
+Protected Cultivation	Poly green house upto 500 Sq m	50% subsidy limited to a maximum of Rs.530/Sq m
+Plantation Infrastructure Development-Production of Planting Material	Hi- Tech Nursery (public)	40% subsidy limited to a maximum of Rs.40lakhs/Unit
+Plantation Infrastructure Development-Production of Planting Material	Small Nursery (public)	50% subsidy limited to a maximum of Rs.15lakhs/Unit
+Plantation Infrastructure Development-Production of Planting Material	Small Nursery (Private)	50% subsidy limited to a maximum of Rs.7.50lakhs/Unit
+Plantation Infrastructure Development-Production of Planting Material	Upgradation of nursery (Public)	50% subsidy limited to a maximum of Rs.10lakhs/Unit
+Plantation Infrastructure Development-Production of Planting Material	Setting up of New T/C unit (Public)	null
+Plantation Infrastructure Development-Production of Planting Material	Seed production for vegetables & spices - Open pollinated	35% subsidy limited to a maximum of Rs.35,000/Ha
+Plantation Infrastructure Development-Production of Planting Material	Seed infrastructure (for handling, processing, packing, storage, etc., of seed meant for use as seed material for cultivation of horticulture crops)	null
+Plantation Infrastructure Development-Production of Planting Material	Setting up of new TC units (Private)	40% subsidy limited to a maximum of Rs.40lakhs/Unit
+Protected Cultivation	Poly green house 501 - 1008 Sq m	50% subsidy limited to a maximum of Rs.467.50 /Sq m
+Protected Cultivation	Poly green house 1009 - 2080 Sq m	50% subsidy limited to a maximum of Rs.445 /Sq m
+Protected Cultivation	Poly green house 2081 - 4000 Sq m	50% subsidy limited to a maximum of Rs.422 /Sq m
+Rejuvenation-replacement of senile plantation-canopy management	Mango	40% subsidy limited to a maximum of Rs.24000/ Ha
+Rejuvenation-replacement of senile plantation-canopy management	Cashew	40% subsidy limited to a maximum of Rs.24000/ Ha
+Mushroom cultivation (NHM)	Production unit	40% subsidy limited to a maximum of Rs.8lakhs/Unit
+Mushroom cultivation (NHM)	Spawn making unit	40% subsidy limited to a maximum of Rs.6lakhs/Unit
+Promotion of INM-IPM	Plant Health Clinics	null
+Promotion of INM-IPM	Promotion of INM / IPM	30% subsidy limited to a maximum of Rs.1,200/Ha
+Organic Farming	Adoption of Organic Farming - 3rd year Maintenance	50% subsidy limited to a maximum of Rs.3,000/Ha
+Organic Farming	Adoption of Organic Farming - 2nd year Maintenance	50% subsidy limited to a maximum of Rs.3,000/Ha
+Organic Farming	Adoption of organic farming -1st year	50% subsidy limited to a maximum of Rs.4,000/Ha
+Organic Farming	HDPE Vermibed	50% subsidy limited to a maximum of Rs.8,000/Unit
+Organic Farming	Permanent Vermi compost unit	50% subsidy limited to a maximum of Rs.50,000/Unit
+Protected Cultivation	Cost of planting material & cultivation of Carnation & Gerbera under poly house/shade net house.	50% subsidy limited to a maximum of Rs.350/Sq.m
+Protected Cultivation	Cost of planting material & cultivation of Rose & lilium under poly house/shade net house	50% subsidy limited to a maximum of Rs.213/Sq.m
+Protected Cultivation	Cost of planting material & cultivation of Capsicum and Cucumber under poly house/shade net house	50% subsidy limited to a maximum of Rs.70/Sq.m
+Protected Cultivation	Plastic Mulching	50% subsidy limited to a maximum of Rs.16,000/Ha
+Horticulture Mechanization	Land Development, Tillage and seed bed preparation equipment	subsidy limited to a maximum of Rs.12,000/Unit
+Horticulture Mechanization	Plastic Mulch laying machine	subsidy limited to a maximum of Rs.28,000/Unit
+Horticulture Mechanization	Powered Knapsack Sprayer (8-12 lts)	subsidy limited to a maximum of Rs.2,500/Unit
+Horticulture Mechanization	Powered Knapsack Sprayer (12-16 lts)	subsidy limited to a maximum of Rs.3,000/Unit
+Horticulture Mechanization	Tractor mounted / Operated Sprayer (above 35 BHP)	40% subsidy limited to a maximum of Rs.50,000/Unit
+Horticulture Mechanization	Tractor (upto 20 PTO HP)	25% subsidy limited to a maximum of Rs.75,000/Unit
+Horticulture Mechanization	Power Tiller (above 8 BHP)	40% subsidy limited to a maximum of Rs.60,000/Unit
+Horticulture Mechanization	Power Tiller (Below 8 BHP)	40% subsidy limited to a maximum of Rs.40,000/Unit
+Pollination support through beekeeping	Honey bee Colony	40% subsidy limited to a maximum of Rs.800/Unit
+Integrated Post Harvest Management	Low cost onion storage	50% subsidy limited to a maximum of Rs.87,500/Unit
+Integrated Post Harvest Management	Pack House	50% subsidy limited to a maximum of Rs.2lakhs/Unit
+Integrated Post Harvest Management	Integrated Pack House	35% subsidy limited to a maximum of Rs.17.50lakhs/Unit
+Integrated Post Harvest Management	Cold storage unit - Type II	35% subsidy limited to a maximum of Rs.3,500/Unit
+Integrated Post Harvest Management	Minimal Processing Unit	40% subsidy limited to a maximum of Rs.10 lakhs/Unit
+Integrated Post Harvest Management	Pre Cooling unit	35% subsidy limited to a maximum of Rs.8.75 lakhs/Unit
+Integrated Post Harvest Management	Refrigerated Transport Vehicles	null
+Integrated Post Harvest Management	Cold Storage Unit Type I	35% subsidy limited to a maximum of Rs.2,800/Unit
+Integrated Post Harvest Management	Ripening Chamber	35% subsidy limited to a maximum of Rs.35,000/Unit
+Special Intervention	Banana Bunch Sleeves	50% subsidy limited to a maximum of Rs.12,500/No
+Special Intervention	Cashew Cutting Machine	50% subsidy limited to a maximum of Rs.6,000/No
+Special Intervention	Cashew Seperator	50% subsidy limited to a maximum of Rs.30,000/No
+Establishment of marketing infrastructure	Static/Mobile Vending cart/ Platform with cool chamber	50% subsidy limited to a maximum of Rs.15,000/Unit
+Pollination support through beekeeping	Bee Hives	40% subsidy limited to a maximum of Rs.800/Unit
+Pollination support through beekeeping	Honey Extractor	40% subsidy limited to a maximum of Rs.8000/Unit
+Establishment of marketing infrastructure	Quality control/ Analysis lab - Public	subsidy limited to a maximum of Rs.200 Lakhs/Unit
+Special Intervention	Farm Deficiency Correction	50% subsidy limited to a maximum of Rs.2,000/No
+Area Expansion Programme (NHM)	Hybrid Vegetables	null
+Area Expansion Programme (NHM)	HDP- Mango	null
+Area Expansion Programme (NHM)	HDP Guava	null
+Area Expansion Programme (NHM)	Papaya	null
+Area Expansion Programme (NHM)	Acid Lime	null
+Area Expansion Programme (NHM)	Fig	null
+Area Expansion Programme (NHM)	Pineapple	null
+Area Expansion Programme (NHM)	Avocado	null
+Area Expansion Programme (NHM)	Dragon fruit	null
+Area Expansion Programme (NHM)	Strawberries	null
+Area Expansion Programme (NHM)	Amla	null
+Area Expansion Programme (NHM)	Jack	null
+Area Expansion Programme (NHM)	Grapes	null
+Area Expansion Programme (NHM)	Manila Tamarind	null
+Area Expansion Programme (NHM)	Mandrin orange	null
+Area Expansion Programme (NHM)	Litchi	null
+Area Expansion Programme (NHM)	Mangosteen	null
+Area Expansion Programme (NHM)	Rambutan	null
+Area Expansion Programme (NHM)	kiwi	null
+Area Expansion Programme (NHM)	Loose flowers-Jasmine, Marigold etc.,	null
+Area Expansion Programme (NHM)	Bulbous flowers- Tuberose, Gladiolus	null
+Area Expansion Programme (NHM)	Seed spices	null
+Area Expansion Programme (NHM)	Rhizomatic spices	null
+Area Expansion Programme (NHM)	Perennial spices - Black pepper, clove and Cinnamon	null
+Area Expansion Programme (NHM)	Cashew	null
+Area Expansion Programme (NHM)	Cocoa	null
+Area Expansion Programme (NHM)	Aromatic crops	null
+Rejuvenation-replacement of senile plantation-canopy management	Curry leaf	null
+Rejuvenation-replacement of senile plantation-canopy management	Jasmine	null
+Organic Farming	Organic certification	null
+Horticulture Mechanization	Powered Knapsack sprayer (Capacity above 16 litre)s	null
+Horticulture Mechanization	Tractor mounted / Operated Sprayer (Below 20 BHP)	null
+Horticulture Mechanization	Sowing, Planting, Reaping, and Digging equipments	null
+Horticulture Mechanization	Eco Friendly light traps	null
+Horticulture Mechanization	Knapsack/Foot operated sprayer	null
+Integrated Post Harvest Management	Evaporative/Low energy Cool chamber(8MT)- Private	null
+Integrated Post Harvest Management	Pusa Zero Energy Cool Chamber	null
+Establishment of marketing infrastructure	Functional Infrastructure - Collection, Sorting/grading, Packing units etc.,	null
+Special Intervention	Potato Area expansion	null
+Special Intervention	Promotion of Jack -Introduction of New commercial varieties	null
+Special Intervention	Removal of prosopis for planting of chillies	null
+Mango Rejuvenation	Mango Rejuvenation	50

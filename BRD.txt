@@ -1,0 +1,86 @@
+Business Requirements Document (BRD)
+AI-Powered Agricultural Schemes & Subsidy Assistant (Tamil Nadu & Central Government)
+1. Document Control & Metadata
+Project Title: Agricultural Schemes & Subsidy Assistant
+
+Domain: Public Sector Agriculture, Citizen Services, Welfare Schemes
+
+Target Jurisdictions: Government of Tamil Nadu & Central Government of India
+
+Document Status: Business Requirements Specification
+
+2. Business Objectives & Background
+Business Problem: Farmers, rural entrepreneurs, and agricultural stakeholders in Tamil Nadu often struggle to navigate the vast array of state and central agricultural schemes, subsidy eligibility criteria, and documentation requirements due to scattered documentation and language barriers.
+
+Project Goal: To build an intelligent, interactive assistant that streamlines scheme discovery by allowing users to filter information based on their preferred language (Tamil or English) and administrative jurisdiction (Tamil Nadu State, Central Government, or Both).
+
+Key Stakeholders: Farmers, Self-Help Groups (SHGs), Farmer Producer Organizations (FPOs), and District Agriculture Department Officers.
+
+3. Scope of the System
+In-Scope
+Multilingual User Interaction: Support for user preferences in Tamil and English languages.
+
+Jurisdictional Routing: Ability to filter queries and retrieve information exclusively for Tamil Nadu state schemes, exclusively for Central government schemes, or a combined view of both.
+
+Scheme Information Delivery: Comprehensive details covering subsidy amounts, eligibility requirements, application steps, and mandatory verification documents.
+
+Out-of-Scope
+Direct processing or backend submission of government application forms (read-only advisory and guidance scope).
+
+Real-time bank disbursement tracking or individual beneficiary account status lookups.
+
+4. User Journey & Functional Requirements Flow
+Step 1: Language Preference Capture
+Business Rule: The system must prompt the user to select their preferred language (Tamil or English) at the start of the interaction.
+
+Business Outcome: Sets the communication medium and aligns the context retrieval to the requested linguistic format.
+
+Step 2: Scheme Jurisdiction Preference Capture
+Business Rule: The user must explicitly choose the governance scope for the schemes they wish to explore:
+
+State (Tamil Nadu) Schemes Only: Restricts output exclusively to policies, subsidies, and grants issued by the Government of Tamil Nadu.
+
+Central Schemes Only: Restricts output exclusively to policies and subsidies issued by the Central Government of India.
+
+Both (Tamil Nadu & Central): Allows retrieval across both jurisdictions simultaneously.
+
+Business Outcome: Ensures precise targeting of administrative content and eliminates irrelevant scheme suggestions.
+
+Step 3: Query Execution & Information Retrieval
+Business Rule: Once preferences are locked, the user enters their query in natural language (e.g., matching crop type, equipment category, or subsidy type).
+
+Business Outcome: The system delivers relevant guidelines aligned with the selected language and jurisdiction filters.
+
+5. Detailed Source Document Inventory
+To ensure complete coverage, the business content must ingest and maintain information from the following categories:
+
+A. Tamil Nadu State Schemes
+Policy & Governance Source Material: Policy notes and operational guidelines from the Department of Agriculture-Farmers Welfare, Government of Tamil Nadu.
+
+Key Focus Areas:
+
+State-specific farmer security and welfare frameworks (e.g., Uzhavan Pathukappu Thittam).
+
+State-sponsored micro-irrigation top-ups and horticulture promotion initiatives.
+
+Agricultural mechanization assistance managed via state portals (such as the Uzhavan ecosystem).
+
+State disaster relief and crop loss compensation guidelines.
+
+B. Central Government Schemes
+Policy & Governance Source Material: Operational guidelines from the Ministry of Agriculture & Farmers Welfare, Government of India.
+
+Key Focus Areas:
+
+Income support schemes (e.g., PM-KISAN).
+
+Crop insurance frameworks (e.g., PMFBY).
+
+National sub-missions on agricultural mechanization, organic farming, and seed development.
+
+6. Business Rules & Compliance Guidelines
+Mandatory Sourcing/Attribution: Every subsidy or scheme recommendation provided to the user must explicitly reference its governing authority and official document source (e.g., specific Tamil Nadu Government Orders or Central Ministry guidelines) to maintain transparency.
+
+Accuracy & Fallback Policy: If a user query falls outside the scope of available scheme data or if the exact eligibility is ambiguous, the system must state that information is unavailable rather than assuming or generating unverified policy details.
+
+Localization Standard: Tamil responses must utilize authentic, locally accepted agricultural and administrative terminology relevant to farming communities in Tamil Nadu.

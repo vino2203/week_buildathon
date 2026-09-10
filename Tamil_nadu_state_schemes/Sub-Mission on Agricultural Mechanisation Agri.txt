@@ -1,0 +1,9 @@
+Scheme Details View
+Close
+Input Type	Componenet	Pattern of Subsidy
+Electric Pumpset (Agri)	Electric Pumpset	The subsidy assistance to the farmers will be provided at the rate of Rs.15,000/- or 50 percent of the cost of electric motor pumpsets whichever is less for purchasing new electric motor pumpsets.
+Rotavator - 5 feet (Agri)	Rotavator - 5 feet	40 % subsidy or Rs.34,000/ No. for General farmers; 50 % subsidy or Rs.42,000/ No. for SC, ST, small, maginal and womenfarmers
+Seed cum fertilizer drill/ Zero till Seed cum fertilizer drill 9 tynes (Agri)	Seed cum fertilizer drill/ Zero till Seed cum fertilizer drill 9 tynes	For Small,Marginal,SC,ST and Women Farmers 50 % subsidy or limited to maximum Rs.24,000/- and For Other farmers 40 % subsidy or limited to maximum Rs.19,000/-
+Power Weeder (Engine operated above 5 BHP) (Agri)	Power Weeder (Engine operated above 5 BHP)	For Small,Marginal,SC,ST and Women Farmers 50 % subsidy or limited to maximum Rs.63,000/- and For Other farmers 40 % subsidy or limited to maximum Rs.50,000/-
+Power Tiller (above 11 BHP)	Power Tiller (above 11 BHP)	null
+Rotavator -6 feet (Agri)	Rotavator -6 feet	null
