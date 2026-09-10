@@ -70,11 +70,7 @@ Streaming Multilingual Response (Tamil / English)
    ```
 
 4. **Set up environment variables**:
-   Create a `.env` file in the root directory (refer to `.env.example`):
-   ```bash
-   cp .env.example .env
-   ```
-   Update `.env` with your API keys:
+   Create a `.env` file in the root directory:
    ```env
    OPENAI_API_KEY=your_openai_api_key_here
    LANGCHAIN_API_KEY=your_langchain_api_key_here
