@@ -82,7 +82,7 @@ Streaming Multilingual Response (Tamil / English)
 
 Launch the Streamlit app:
 ```bash
-streamlit run app.py
+streamlit run frontend/app.py
 ```
 
 ---
@@ -90,21 +90,23 @@ streamlit run app.py
 ## 📁 Repository Structure
 
 ```
-├── app.py                      # Main Streamlit application entry point
-├── language_router.py          # Multilingual and jurisdictional routing logic
-├── retriever.py                # Hybrid FAISS + BM25 retriever
-├── generator.py                # LLM response generation and prompt chains
-├── embeddings.py               # Vector store creation and indexing
-├── chunking.py                 # Document chunking strategies
-├── data_ingestion.py           # Text and PDF ingestion pipeline
-├── convert_pdf_multimodal.py   # PDF text & multimodal processing
-├── components/                 # Streamlit UI components (chat, sidebar, composer)
-├── repositories/               # Session and state management
-├── services/                   # Business and chat service orchestration
-├── Central_goverment_schemes/  # Central government scheme documents
-├── Tamil_nadu_state_schemes/   # Tamil Nadu state scheme documents
-├── faiss_index_central/        # FAISS vector store for central schemes
-├── faiss_index_tn/             # FAISS vector store for TN state schemes
+├── backend/                    # Retrieval, generation and data pipeline
+│   ├── config.py               # Shared paths (data, FAISS indexes)
+│   ├── retriever.py            # Hybrid FAISS + BM25 retriever
+│   ├── generator.py            # LLM response generation and prompt chains
+│   ├── language_router.py      # Multilingual and jurisdictional routing logic
+│   ├── embeddings.py           # Vector store creation and indexing
+│   ├── chunking.py             # Document chunking strategies
+│   ├── data_ingestion.py       # Text and PDF ingestion pipeline
+│   ├── services/               # Chat service orchestration
+│   └── scripts/                # Scrapers and PDF conversion (run as modules)
+├── frontend/                   # Streamlit UI
+│   ├── app.py                  # Application entry point
+│   ├── components/             # Chat, sidebar, composer
+│   ├── repositories/           # Session and state management
+│   └── styles/                 # CSS
+├── tests/                      # pytest suite
+├── data/                       # Scheme documents and FAISS indexes
 ├── BRD.txt                     # Business Requirements Document
 └── requirements.txt            # Python package dependencies
 ```

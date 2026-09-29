@@ -1,4 +1,5 @@
 import os
+from backend.config import DATA_DIR
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
@@ -26,7 +27,7 @@ def get_hybrid_retriever(category: str):
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
     
     # Load the correct FAISS index based on category
-    faiss_path = f"faiss_index_{category}"
+    faiss_path = os.path.join(DATA_DIR, f"faiss_index_{category}")
     print(f"Loading FAISS index from {faiss_path}...")
     vectorstore = FAISS.load_local(faiss_path, embeddings, allow_dangerous_deserialization=True)
     

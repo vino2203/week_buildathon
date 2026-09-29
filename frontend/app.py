@@ -1,5 +1,8 @@
 import streamlit as st
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Must be the very first Streamlit command
 st.set_page_config(
@@ -9,11 +12,11 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-from repositories.session_store import SessionStore
-from components.sidebar import render_sidebar
-from components.chat_area import render_messages
-from components.composer import render_composer
-from services.chat_service import ChatService
+from frontend.repositories.session_store import SessionStore
+from frontend.components.sidebar import render_sidebar
+from frontend.components.chat_area import render_messages
+from frontend.components.composer import render_composer
+from backend.services.chat_service import ChatService
 
 def load_css():
     """Loads custom CSS for premium styling."""

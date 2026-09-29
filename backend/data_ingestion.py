@@ -1,8 +1,9 @@
 import os
+from backend.config import TN_SCHEMES_DIR, CENTRAL_TEXT_PATH
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_core.documents import Document
 
-def load_tamil_nadu_schemes(directory_path: str = "Tamil_nadu_state_schemes"):
+def load_tamil_nadu_schemes(directory_path: str = TN_SCHEMES_DIR):
     """
     Loads all text files from the Tamil Nadu schemes directory.
     Adds metadata indicating the source category.
@@ -24,7 +25,7 @@ def load_tamil_nadu_schemes(directory_path: str = "Tamil_nadu_state_schemes"):
     print(f"Loaded {len(documents)} Tamil Nadu scheme documents.\n")
     return documents
 
-def load_central_schemes(file_path: str = "Central_goverment_schemes/SCHEMES_extracted.txt"):
+def load_central_schemes(file_path: str = CENTRAL_TEXT_PATH):
     """
     Loads the extracted text file containing Central Government schemes.
     Adds metadata indicating the source category.

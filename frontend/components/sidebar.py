@@ -1,5 +1,5 @@
 import streamlit as st
-from repositories.session_store import SessionStore
+from frontend.repositories.session_store import SessionStore
 from datetime import datetime, timedelta
 
 def render_sidebar():

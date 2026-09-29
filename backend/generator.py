@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
-from retriever import retrieve_pipeline
+from backend.retriever import retrieve_pipeline
 
 # Load environment variables
 load_dotenv()

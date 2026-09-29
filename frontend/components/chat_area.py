@@ -1,5 +1,5 @@
 import streamlit as st
-from repositories.session_store import SessionStore
+from frontend.repositories.session_store import SessionStore
 
 def render_welcome_screen():
     """Displays a premium empty state when there are no messages."""

@@ -1,6 +1,6 @@
 import os
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from data_ingestion import get_all_scheme_documents
+from backend.data_ingestion import get_all_scheme_documents
 
 def chunk_documents(chunk_size: int = 1000, chunk_overlap: int = 200):
     """

@@ -10,12 +10,12 @@ class DummySessionState(dict):
 
 @pytest.fixture
 def mock_st():
-    with patch("repositories.session_store.st") as mock_st:
+    with patch("frontend.repositories.session_store.st") as mock_st:
         mock_st.session_state = DummySessionState()
         yield mock_st
 
 def test_init_state(mock_st):
-    from repositories.session_store import SessionStore
+    from frontend.repositories.session_store import SessionStore
     SessionStore.init_state()
     assert hasattr(mock_st.session_state, "conversations")
     assert mock_st.session_state.conversations == {}
@@ -23,7 +23,7 @@ def test_init_state(mock_st):
     assert mock_st.session_state.theme == "light"
 
 def test_create_chat(mock_st):
-    from repositories.session_store import SessionStore
+    from frontend.repositories.session_store import SessionStore
     SessionStore.init_state()
     
     chat_id = SessionStore.create_chat()
@@ -33,7 +33,7 @@ def test_create_chat(mock_st):
     assert mock_st.session_state.conversations[chat_id]["title"] == "New Conversation"
 
 def test_add_message_and_rename_title(mock_st):
-    from repositories.session_store import SessionStore
+    from frontend.repositories.session_store import SessionStore
     SessionStore.init_state()
     
     # Adding a message should auto-create a chat if none is active
@@ -50,7 +50,7 @@ def test_add_message_and_rename_title(mock_st):
     assert mock_st.session_state.conversations[chat_id]["title"] == "Hello world!"
 
 def test_delete_chat(mock_st):
-    from repositories.session_store import SessionStore
+    from frontend.repositories.session_store import SessionStore
     SessionStore.init_state()
     
     chat_id = SessionStore.create_chat()
@@ -60,7 +60,7 @@ def test_delete_chat(mock_st):
     assert mock_st.session_state.active_chat_id is None
 
 def test_file_validation_composer():
-    from components.composer import process_uploaded_file
+    from frontend.components.composer import process_uploaded_file
     
     # Test unsupported file
     class FakeFile:

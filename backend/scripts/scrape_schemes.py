@@ -1,4 +1,5 @@
 import asyncio
+from backend.config import TN_SCHEMES_DIR
 import re
 import os
 from playwright.async_api import async_playwright
@@ -10,7 +11,7 @@ async def main():
         page = await context.new_page()
 
         # Ensure output directory exists
-        output_dir = "Tamil_nadu_state_schemes"
+        output_dir = TN_SCHEMES_DIR
         os.makedirs(output_dir, exist_ok=True)
 
         # Navigate to the target URL

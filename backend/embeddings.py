@@ -1,13 +1,14 @@
 import os
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from chunking import chunk_documents
+from backend.chunking import chunk_documents
+from backend.config import FAISS_INDEX_TN, FAISS_INDEX_CENTRAL
 from dotenv import load_dotenv
 
 # Load environment variables (OPENAI_API_KEY)
 load_dotenv()
 
-def create_and_save_vector_stores(save_path_tn: str = "faiss_index_tn", save_path_central: str = "faiss_index_central"):
+def create_and_save_vector_stores(save_path_tn: str = FAISS_INDEX_TN, save_path_central: str = FAISS_INDEX_CENTRAL):
     """
     Generates embeddings for all chunked documents and saves them to separate local FAISS indices.
     """

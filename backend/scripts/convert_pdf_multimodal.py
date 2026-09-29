@@ -1,4 +1,5 @@
 import os
+from backend.config import CENTRAL_PDF_PATH, CENTRAL_TEXT_PATH
 import base64
 from io import BytesIO
 import fitz  # PyMuPDF
@@ -50,8 +51,8 @@ def extract_text_from_pdf(pdf_path, max_pages=2):
     return extracted_text
 
 if __name__ == "__main__":
-    pdf_path = "Central_goverment_schemes/SCHEMES.pdf"
-    output_path = "Central_goverment_schemes/SCHEMES_extracted.txt"
+    pdf_path = CENTRAL_PDF_PATH
+    output_path = CENTRAL_TEXT_PATH
     
     # Process only the first 2 pages by default to prevent large API charges and long execution times.
     # The PDF has nearly 300 pages. To process the whole PDF, change max_pages to None.

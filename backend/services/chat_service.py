@@ -1,10 +1,10 @@
 import streamlit as st
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-from retriever import retrieve_pipeline
-from generator import RTCFR_SYSTEM_PROMPT, TOT_SYSTEM_PROMPT, format_docs
+from backend.retriever import retrieve_pipeline
+from backend.generator import RTCFR_SYSTEM_PROMPT, TOT_SYSTEM_PROMPT, format_docs
 
-from language_router import normalize_query
+from backend.language_router import normalize_query
 
 class ChatService:
     @staticmethod

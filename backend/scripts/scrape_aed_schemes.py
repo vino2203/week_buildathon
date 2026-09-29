@@ -1,10 +1,11 @@
 import asyncio
+from backend.config import TN_SCHEMES_DIR
 import re
 import os
 from playwright.async_api import async_playwright
 
 async def main():
-    output_dir = "Tamil_nadu_state_schemes"
+    output_dir = TN_SCHEMES_DIR
     os.makedirs(output_dir, exist_ok=True)
 
     async with async_playwright() as p:
