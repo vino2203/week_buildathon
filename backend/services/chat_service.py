@@ -5,6 +5,7 @@ from backend.retriever import retrieve_pipeline
 from backend.generator import RTCFR_SYSTEM_PROMPT, TOT_SYSTEM_PROMPT, format_docs
 
 from backend.language_router import normalize_query
+from backend.graph_store import related_schemes
 
 class ChatService:
     @staticmethod
@@ -41,6 +42,11 @@ class ChatService:
         system_prompt += f"\n\nCRITICAL REQUIREMENT: You MUST formulate your final answer entirely in {language}."
             
         context_str = format_docs(context_docs)
+
+        # Enrich context with related schemes from the Neo4j knowledge graph
+        related = related_schemes(context_docs)
+        if related:
+            context_str += "\n\n[RELATED SCHEMES FROM KNOWLEDGE GRAPH]:\n" + "\n".join(f"- {r}" for r in related)
         
         # Inject file content if provided
         if uploaded_file_content:

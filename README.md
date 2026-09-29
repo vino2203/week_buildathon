@@ -78,6 +78,14 @@ Streaming Multilingual Response (Tamil / English)
    LANGCHAIN_PROJECT=scheme-rag
    ```
 
+### Neo4j Knowledge Graph
+
+Add `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD` (and optionally `NEO4J_DATABASE`) to `.env`, then load the schemes once:
+```bash
+python -m backend.graph_store
+```
+Chat answers are then enriched with related schemes from the graph. If Neo4j is unreachable, the app falls back to normal retrieval.
+
 ### Running the Application
 
 Launch the Streamlit app:
@@ -95,6 +103,7 @@ streamlit run frontend/app.py
 │   ├── retriever.py            # Hybrid FAISS + BM25 retriever
 │   ├── generator.py            # LLM response generation and prompt chains
 │   ├── language_router.py      # Multilingual and jurisdictional routing logic
+│   ├── graph_store.py          # Neo4j knowledge graph (build + related-scheme lookup)
 │   ├── embeddings.py           # Vector store creation and indexing
 │   ├── chunking.py             # Document chunking strategies
 │   ├── data_ingestion.py       # Text and PDF ingestion pipeline
