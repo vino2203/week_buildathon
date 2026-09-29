@@ -1,5 +1,6 @@
 import os
 from backend.config import DATA_DIR
+from backend.graph_store import graph_retrieve
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
@@ -132,23 +133,42 @@ def rerank_documents(query: str, docs: List[Document], top_k: int = 3) -> List[D
     print(f"[Re-Rank] Returning top {len(ranked_docs)} documents.")
     return ranked_docs
 
+def bm25_rank(query: str, docs: List[Document], k: int = 8) -> List[Document]:
+    """BM25 ordering over a candidate pool (used to merge Aura and FAISS results)."""
+    if not docs:
+        return []
+    bm25 = BM25Retriever.from_documents(docs)
+    bm25.k = min(k, len(docs))
+    return bm25.invoke(query)
+
+
 def retrieve_pipeline(query: str, category: str = "tn"):
     """
-    Full Retrieval Pipeline: Hybrid Search -> Self-RAG Grading -> Re-Ranking
+    Retrieval Pipeline:
+      Branch A (Aura/Neo4j): graph full-text retrieval -> Self-RAG grading
+      Branch B (FAISS):      FAISS + BM25 hybrid retrieval -> Re-Ranking
+      Final:                 merge A + B -> BM25 -> Re-Ranking
     """
-    print(f"--- Starting Pipeline 2 for query: '{query}' ---")
+    print(f"--- Starting Pipeline for query: '{query}' ---")
+
+    # Branch A: Aura + Self-RAG
+    aura_docs = graph_retrieve(query, category)
+    print(f"[Aura] Retrieved {len(aura_docs)} documents.")
+    aura_docs = self_rag_grade(query, aura_docs) if aura_docs else []
+
+    # Branch B: FAISS + BM25 -> Re-Rank
     bm25_retriever, faiss_retriever = get_hybrid_retriever(category)
-    
-    # 1. Retrieve
-    retrieved_docs = hybrid_retrieve(query, bm25_retriever, faiss_retriever)
-    
-    # 2. Self-RAG (Grade)
-    graded_docs = self_rag_grade(query, retrieved_docs)
-    
-    # 3. Re-Rank
-    final_docs = rerank_documents(query, graded_docs)
-    
-    return final_docs
+    faiss_docs = rerank_documents(query, hybrid_retrieve(query, bm25_retriever, faiss_retriever), top_k=5)
+
+    # Final: merge, dedupe, BM25 + Re-Rank
+    merged, seen = [], set()
+    for d in aura_docs + faiss_docs:
+        key = d.page_content.strip()
+        if key not in seen:
+            seen.add(key)
+            merged.append(d)
+    print(f"[Final] Merged pool: {len(merged)} documents (Aura {len(aura_docs)}, FAISS {len(faiss_docs)}).")
+    return rerank_documents(query, bm25_rank(query, merged), top_k=3)
 
 if __name__ == "__main__":
     # Test the retriever pipeline

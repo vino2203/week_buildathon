@@ -46,6 +46,55 @@ def _topics(name: str, text: str) -> List[str]:
     return [t for t, words in TOPIC_KEYWORDS.items() if any(w in haystack for w in words)]
 
 
+def ensure_indexes(session):
+    session.run("CREATE FULLTEXT INDEX scheme_text IF NOT EXISTS FOR (s:Scheme) ON EACH [s.name, s.text]")
+    session.run("CREATE FULLTEXT INDEX chunk_text IF NOT EXISTS FOR (c:Chunk) ON EACH [c.text]")
+
+
+STOPWORDS = {"what", "is", "are", "the", "a", "an", "of", "for", "to", "in", "on", "and", "or", "how", "can",
+             "i", "me", "my", "do", "does", "any", "available", "which", "who", "get", "under", "with", "about"}
+
+
+def _lucene_escape(query: str) -> str:
+    """Strips Lucene special characters and stopwords so full-text search focuses on content words."""
+    words = re.sub(r'[+\-&|!(){}\[\]^"~*?:\\/]', " ", query).split()
+    return " ".join(w for w in words if w.lower() not in STOPWORDS)
+
+
+def graph_retrieve(query: str, category: str = "tn", k: int = 4) -> List[Document]:
+    """
+    Retrieves scheme text / chunks from Neo4j (Aura) via full-text search.
+    category: 'tn' or 'central'. Returns [] if Neo4j is unavailable.
+    """
+    cat = {"tn": "state_tn", "central": "central"}.get(category, category)
+    driver = get_driver()
+    q = _lucene_escape(query).strip()
+    if driver is None or not q:
+        return []
+    try:
+        with driver, _session(driver) as session:
+            rows = session.run(
+                """
+                CALL () {
+                  CALL db.index.fulltext.queryNodes('scheme_text', $q) YIELD node, score
+                  WHERE node.category = $cat AND node.text IS NOT NULL
+                  RETURN node.name AS name, node.source AS source, substring(node.text, 0, 3000) AS text, score
+                  UNION
+                  CALL db.index.fulltext.queryNodes('chunk_text', $q) YIELD node, score
+                  MATCH (node)-[:PART_OF]->(s:Scheme) WHERE s.category = $cat
+                  RETURN s.name AS name, s.source AS source, node.text AS text, score
+                }
+                RETURN name, source, text, score ORDER BY score DESC LIMIT $k
+                """, q=q, cat=cat, k=k)
+            return [Document(page_content=r["text"],
+                             metadata={"source": r["source"], "name": r["name"],
+                                       "retriever": "neo4j", "score": r["score"]})
+                    for r in rows]
+    except Exception as e:
+        print(f"[Neo4j] Graph retrieval skipped: {e}")
+        return []
+
+
 def build_graph(directory: str = TN_SCHEMES_DIR):
     """
     Uploads every scheme document (full text) into Neo4j, one by one, as:
@@ -58,6 +107,7 @@ def build_graph(directory: str = TN_SCHEMES_DIR):
 
     with driver, _session(driver) as session:
         session.run("CREATE CONSTRAINT scheme_name IF NOT EXISTS FOR (s:Scheme) REQUIRE s.name IS UNIQUE")
+        ensure_indexes(session)
         session.run("MERGE (:Region {name: 'Tamil Nadu'})")
 
         count = 0
