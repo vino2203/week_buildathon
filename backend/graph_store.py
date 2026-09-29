@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 from neo4j import GraphDatabase
 from langchain_core.documents import Document
 
-from backend.config import TN_SCHEMES_DIR
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+from backend.config import TN_SCHEMES_DIR, CENTRAL_TEXT_PATH
 
 load_dotenv()
 
@@ -46,7 +48,7 @@ def _topics(name: str, text: str) -> List[str]:
 
 def build_graph(directory: str = TN_SCHEMES_DIR):
     """
-    Loads Tamil Nadu scheme files into Neo4j as:
+    Uploads every scheme document (full text) into Neo4j, one by one, as:
     (Scheme)-[:IN_REGION]->(Region), (Scheme)-[:HAS_TOPIC]->(Topic),
     (Scheme)-[:FOR_BENEFICIARY]->(Beneficiary), (Scheme)-[:OFFERS]->(BenefitType)
     """
@@ -68,13 +70,13 @@ def build_graph(directory: str = TN_SCHEMES_DIR):
             session.run(
                 """
                 MERGE (s:Scheme {name: $name})
-                SET s.source = $source, s.funding = $funding
+                SET s.source = $source, s.funding = $funding, s.text = $text, s.category = 'state_tn'
                 WITH s
                 MATCH (r:Region {name: 'Tamil Nadu'})
                 MERGE (s)-[:IN_REGION]->(r)
                 """,
                 name=name, source=os.path.join(directory, filename),
-                funding=_field(text, "Funding Pattern"),
+                funding=_field(text, "Funding Pattern"), text=text,
             )
             for topic in _topics(name, text):
                 session.run(
@@ -88,8 +90,37 @@ def build_graph(directory: str = TN_SCHEMES_DIR):
                         f"MATCH (s:Scheme {{name: $n}}) MERGE (x:{node} {{name: $v}}) MERGE (s)-[:{rel}]->(x)",
                         n=name, v=value)
             count += 1
-    print(f"Loaded {count} schemes into Neo4j.")
+            print(f"[{count}] Uploaded: {name}")
+
+        _load_central(session)
+    print(f"Loaded {count} Tamil Nadu schemes + Central schemes document into Neo4j.")
     return count
+
+
+def _load_central(session, path: str = CENTRAL_TEXT_PATH, chunk_size: int = 4000):
+    """Uploads the Central schemes file as one Scheme node with its text split into linked Chunk nodes."""
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    name = os.path.splitext(os.path.basename(path))[0]
+    session.run("MERGE (:Region {name: 'Central Government'})")
+    session.run(
+        """
+        MERGE (s:Scheme {name: $name})
+        SET s.source = $source, s.category = 'central'
+        WITH s
+        MATCH (r:Region {name: 'Central Government'})
+        MERGE (s)-[:IN_REGION]->(r)
+        """, name=name, source=path)
+    chunks = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=200).split_text(text)
+    for i, chunk in enumerate(chunks):
+        session.run(
+            """
+            MATCH (s:Scheme {name: $name})
+            MERGE (c:Chunk {id: $id})
+            SET c.index = $i, c.text = $text
+            MERGE (c)-[:PART_OF]->(s)
+            """, name=name, id=f"{name}-{i}", i=i, text=chunk)
+        print(f"[central] Uploaded chunk {i + 1}/{len(chunks)}")
 
 
 def related_schemes(docs: List[Document], limit: int = 5) -> List[str]:
